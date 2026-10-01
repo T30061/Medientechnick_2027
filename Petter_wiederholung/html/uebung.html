@@ -3,121 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ausgabemethoden in JavaScript</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
-            color: #222;
-            margin: 0;
-            padding: 30px;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #1f4e79;
-            margin-top: 0;
-        }
-
-        .intro {
-            font-size: 17px;
-            line-height: 1.6;
-        }
-
-        .table-container {
-            overflow-x: auto;
-            margin-top: 25px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            min-width: 1000px;
-        }
-
-        th {
-            background-color: #1f4e79;
-            color: white;
-            padding: 14px;
-            text-align: left;
-        }
-
-        td {
-            padding: 14px;
-            border-bottom: 1px solid #ddd;
-            vertical-align: top;
-            line-height: 1.5;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f7f9fb;
-        }
-
-        tr:hover {
-            background-color: #eef5fb;
-        }
-
-        code {
-            background-color: #e8edf2;
-            padding: 3px 6px;
-            border-radius: 4px;
-            font-family: Consolas, monospace;
-            color: #b03030;
-        }
-
-        .warning {
-            color: #a33a00;
-            font-weight: bold;
-        }
-
-        .developer {
-            color: #176b3a;
-            font-weight: bold;
-        }
-
-        .users {
-            color: #1f4e79;
-            font-weight: bold;
-        }
-
-        .merksatz {
-            margin-top: 30px;
-            padding: 20px;
-            background-color: #eef6ff;
-            border-left: 5px solid #1f4e79;
-            border-radius: 6px;
-        }
-
-        .merksatz li {
-            margin: 8px 0;
-        }
-    </style>
+    <meta name="theme-color" content="#10100f">
+    <meta name="description" content="Lerne die wichtigsten JavaScript-Ausgabemethoden kennen und erfahre, wann du sie einsetzen solltest.">
+    <title>Ausgabemethoden — JS Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/uebung.css">
 </head>
 
-<body>
+<body id="top">
 
-    <div class="container">
+    <header class="site-header">
+        <nav class="nav-shell" aria-label="Hauptnavigation">
+            <a class="brand" href="../index.html" aria-label="JS Studio Startseite">
+                <span class="brand-mark" aria-hidden="true">JS</span>
+                <span>js<span class="brand-light">studio</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#themen">Themen</a>
+                <a href="../index.html#spielwiese">Spielwiese</a>
+                <a class="nav-cta" href="../index.html">← Startseite</a>
+            </div>
+        </nav>
+    </header>
 
-        <h1>Ausgabemethoden in JavaScript</h1>
+    <main class="lesson-shell">
+        <section class="lesson-intro" aria-labelledby="lesson-title">
+            <a class="back-link" href="../index.html">← Zurück zu JS Studio</a>
+            <p class="eyebrow"><span class="status-dot"></span> LERNEINHEIT / 01</p>
+            <h1 id="lesson-title">Ausgaben in<br><span>JavaScript.</span></h1>
+            <p class="intro">
+                JavaScript bietet verschiedene Möglichkeiten, Informationen auszugeben
+                oder Eingaben von Benutzer:innen zu erhalten. Welche Methode geeignet ist,
+                hängt davon ab, ob die Ausgabe für Entwickler:innen oder für normale
+                Webseitenbesucher:innen bestimmt ist.
+            </p>
+            <div class="lesson-meta"><span>5 Methoden</span><span aria-hidden="true">·</span><span>Etwa 5 Minuten</span><span aria-hidden="true">·</span><span>Grundlagen</span></div>
+        </section>
 
-        <p class="intro">
-            JavaScript bietet verschiedene Möglichkeiten, Informationen auszugeben
-            oder Eingaben von Benutzer:innen zu erhalten. Welche Methode geeignet ist,
-            hängt davon ab, ob die Ausgabe für Entwickler:innen oder für normale
-            Webseitenbesucher:innen bestimmt ist.
-        </p>
+        <section class="lesson-panel" aria-label="Übersicht der JavaScript-Ausgabemethoden">
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow">DIE ÜBERSICHT</p>
+                    <h2>Welche Ausgabe passt?</h2>
+                </div>
+                <span class="panel-tag">JAVASCRIPT BASICS</span>
+            </div>
 
         <div class="table-container">
             <table>
+                <caption>Vergleich der JavaScript-Ausgabemethoden, ihrer Zielgruppe und typischen Einsatzbereiche.</caption>
 
                 <thead>
                     <tr>
@@ -290,9 +226,12 @@
         </div>
 
 
-        <div class="merksatz">
+        <aside class="merksatz" aria-labelledby="takeaway-title">
 
-            <h2>💡 Merksatz</h2>
+            <div class="takeaway-icon" aria-hidden="true">✳</div>
+            <div>
+            <p class="eyebrow">ZUM MITNEHMEN</p>
+            <h2 id="takeaway-title">Merksatz</h2>
 
             <ul>
                 <li>
@@ -316,9 +255,16 @@
                 </li>
             </ul>
 
-        </div>
+            </div>
+        </aside>
+        </section>
+    </main>
 
-    </div>
+    <footer class="site-footer">
+        <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">JS</span><span>js<span class="brand-light">studio</span></span></a>
+        <p>Mit Neugier gebaut. <span aria-hidden="true">✳</span> JavaScript für alle.</p>
+        <a class="footer-top" href="#top">Nach oben ↑</a>
+    </footer>
 
 </body>
 </html>
