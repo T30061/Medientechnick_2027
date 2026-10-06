@@ -4,7 +4,7 @@
 
 Voraussetzungen: Node.js 20 oder neuer.
 
-1. Im Ordner `Petter_wiederholung` Abhängigkeiten installieren: `npm install`
+1. Im Ordner `Petter_wiederholung` Abhängigkeiten installieren: `npm install` (falls npm beim Sicherheitsdialog das native Paket `better-sqlite3` blockiert, dessen Installationsskript für dieses Projekt freigeben und anschließend erneut installieren)
 2. Den Server starten: `npm start`
 3. Im Browser `http://localhost:3000` öffnen. Die HTML-Dateien nicht direkt mit `file://` öffnen, denn Login und Server-Speicherung benötigen denselben Webserver.
 
